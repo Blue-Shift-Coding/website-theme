@@ -1,0 +1,360 @@
+      [class*="column"] + [class*="column"]:last-child {
+        float: left;
+      }
+
+      .class-row {
+        margin-bottom: 5%;
+      }
+
+      .woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce #respond input#submit,.woocommerce #content input.button,.woocommerce-page a.button,.woocommerce-page button.button,.woocommerce-page input.button,.woocommerce-page #respond input#submit,.woocommerce-page #content input.button{
+        font-size:100%;
+        margin:0;
+        line-height:1em;
+        cursor:pointer;
+        position:relative;
+        font-family:inherit;
+        text-decoration:none;
+        overflow:visible;
+        padding:6px 10px;
+        font-weight:bold;
+        -webkit-border-radius:0px;
+        border-radius:0px !important; 
+        left:auto;
+        text-shadow:0 1px 0 #ffffff !important;
+        color:#5086ac;
+        text-shadow: none;
+        border:1px solid #5086ac;
+        background:#ffffff;
+        background: none;
+        background:none;
+        background:none !important;
+        background:none !important;
+        white-space:nowrap;display:inline-block;
+        -webkit-box-shadow:none !important;
+        -moz-box-shadow:none !important;
+        box-shadow:none !important;
+      }
+
+      .woocommerce a.button.alt {
+        font-size:100%;
+        margin:0;
+        line-height:1em;
+        cursor:pointer;
+        position:relative;
+        font-family:inherit;
+        text-decoration:none;
+        overflow:visible;
+        padding:6px 10px;
+        font-weight:bold;
+        -webkit-border-radius:0px;
+        border-radius:0px !important; 
+        left:auto;
+        text-shadow:0 1px 0 #ffffff !important;
+        color:#5086ac;
+        text-shadow: none;
+        border:1px solid #5086ac;
+        background:#ffffff;
+        background: none;
+        background:none;
+        background:none !important;
+        background:none !important;
+        white-space:nowrap;display:inline-block;
+        -webkit-box-shadow:none !important;
+        -moz-box-shadow:none !important;
+        box-shadow:none !important;
+      }
+
+      .woocommerce a.button.alt:hover {
+        color:#5086ac;
+      }
+
+  
+      .woocommerce .woocommerce-message:before, .woocommerce-page .woocommerce-message:before {
+        background-color: #fff;
+      }
+
+      .woocommerce .woocommerce-message, .woocommerce-page .woocommerce-message {
+        border: 2px solid #5086ac;
+      }
+
+      .woocommerce .woocommerce-message, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce-page .woocommerce-message, .woocommerce-page .woocommerce-error, .woocommerce-page .woocommerce-info {
+        border-radius: 0px;
+        background-color: #fff;
+        color: #5086ac;
+        text-shadow: none;
+        -webkit-box-shadow:none !important;
+        -moz-box-shadow:none !important;
+        box-shadow:none !important;
+        margin: 2% 0% 2% 0% !important;
+        text-align: center;
+      }
+
+      .woocommerce-message {
+        display: none;
+      }
+
+      .woocommerce form.login {
+        border: none;
+      }
+
+      .product_type_variable {
+        display: none;
+      }
+
+      .gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
+        float: left;
+        margin-right: 4%;
+      }
+
+      /*PROCESSING*/
+
+      p.bw{
+      cursor: pointer;
+      display:inline-block;
+      position: relative;
+      text-align: center;
+      padding:2%;
+
+      width: 100%;
+      border:2px solid #5086ac;
+      /*font-size: 11px;*/
+      border-radius: 3px;
+      font-family: "LLBrownWeb-Regular";
+      color:#999;
+    }
+
+    .bw [class*="genericon"] {
+      display: inline-block;
+      width: auto;
+      height: 16px;
+      font-size: 1.5em;
+      -webkit-font-smoothing: antialiased;
+      font-family: "LLBrownWeb-Regular";
+      text-decoration: inherit;
+      font-weight: normal;
+      font-style: normal;
+      vertical-align: top;
+    }
+
+    .bw .show:before{
+      cursor: pointer;
+      /*font-family: 'Genericons';*/
+       content: none; 
+      display: inline-block;
+      margin-right:5px;
+      position: relative;
+      top:2px;
+
+    }
+
+    :not(pre) > code[class*="language-"],
+      pre[class*="language-"] {
+         background: #ffffff;  /* the refresh color */
+         border:2px solid #5086ac;
+      }
+
+  .bw .hide:before{
+    cursor: pointer;
+    /*font-family: 'Genericons'; */
+    content: none;
+    display: inline-block;
+    margin-right:5px;
+    position: relative;
+    top:2px;
+  }
+
+  .blog-text canvas {
+    margin:  auto;
+  }
+
+  .blog #content-shop .stick {
+    width: 23%;
+  }
+
+  input[name="proceed"] { display: none; }
+
+  li {
+    color: #5086ac;
+  }
+
+  .quantity {
+    display:none;
+  }
+
+  .paypal_checkout_button {
+    display: none;
+  }
+
+  .paypal img {
+    display: none;
+  }
+
+  .woocommerce table.cart td.actions .coupon .input-text {
+   /* box-shadow: none;
+    border: 2px solid #5086ac;
+    font-size: 1em;
+    padding: 2%;*/
+  }
+
+  .gform_wrapper ul.gfield_radio li input[type="radio"]:checked+label, .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked+label {
+    font-weight: normal;
+  }
+
+  .read-more {
+   /* display: none;*/
+  }
+
+  .blog-text canvas {
+    width: 80%;
+  }
+
+  .blog-text a {
+    text-decoration: underline;
+  }
+
+  .landing h1.about {
+    font-size: 1.8rem;
+  }
+
+  /* line 449, ../scss/app.scss */
+  .landing {
+
+    padding: 4% 15% 4% 15%;
+ 
+  }
+
+  .check-right {
+    float: right
+  }
+  input[name="coupon_code"] {
+    float: left; width: 50%; margin-right: 2%; font-size: 1em; padding: 0.7rem; height: 1.9rem;
+  }
+
+  .order-total {
+    border: none;
+  }
+
+    label[for=terms]
+    {
+        line-height: 1em;
+        font-size: 1em;
+    }
+
+
+  @media screen and (max-width: 1024px) {
+
+    .woocommerce .cart .button, .woocommerce .cart input.button, .woocommerce-page .cart .button, .woocommerce-page .cart input.button {
+      font-size: 0.8rem;
+    }
+
+    .woocommerce a.button.alt {
+      font-size: 0.8rem;
+    }
+
+    .buy-modal label {
+    
+      font-size: 0.8em;
+    }
+
+    button, .button {
+      width: 100%;
+    }
+
+    .reveal-modal {
+      margin-top: 0;
+    }
+
+    .check-right {
+    float: none;
+  }
+
+  .woocommerce a.button.alt {
+    display: block;
+    margin-top: 2%;
+  }
+
+
+
+  }
+
+   @media screen and (max-width: 800px) {
+      input [name=apply_coupon] {
+      margin-bottom: 2%;
+      }
+
+       input[name="coupon_code"] {
+        float: left; width: 100%; 
+        margin-right: 2%; 
+        font-size: 1em; 
+        padding: 0.7rem; 
+        height: 1.9rem;
+        margin: 0 0 1.375rem 0;
+        height: 1.9375rem;
+      }
+
+      .cart-subtotal {
+        display: none;
+      }
+
+      .product-name a {
+        font-size: 1.5em;
+        margin-left: 4%;
+        margin-bottom: 4%;
+      }
+
+
+      label[for=terms] {
+        font-size: 0.9em;
+      }
+
+   }
+  
+
+
+  .woocommerce #payment #place_order {
+    color: #5086ac;
+    border:2px solid #5086ac;
+  }
+
+
+    .payment_method_paypal_express {
+      display: none;
+    }
+
+    .wc-paypal-express-cancel {
+      display: none;
+    }
+
+    .woocommerce-error {
+      border: 2px solid #b81c23;
+      border-top: 2px solid #b81c23;
+    }
+
+    .woocommerce .woocommerce-error:before, .woocommerce-page .woocommerce-error:before {
+      background-color: #fff;
+      color: #b81c23;
+    }
+    .woocommerce .woocommerce-error li {
+      color: #b81c23;
+      font-size: 2em;
+    }
+
+    .woocommerce .woocommerce-message:before, .woocommerce .woocommerce-error:before, .woocommerce .woocommerce-info:before, .woocommerce-page .woocommerce-message:before, .woocommerce-page .woocommerce-error:before, .woocommerce-page .woocommerce-info:before {
+      text-shadow: none;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      font-size: 18px;
+    }
+
+
+
+
+/*    .cart_item {
+      display: none;
+    }
+
+    .shop_table {
+      display: none;
+    }*/
+
+    

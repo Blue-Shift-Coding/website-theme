@@ -1,0 +1,11 @@
+[01-Mar-2016 17:58:06 UTC] PHP Fatal error:  Call to undefined function wp_title() in /home/blueshiftcoding/public_html/wp-content/themes/blueshift/header.php on line 7
+[01-Mar-2016 17:58:06 UTC] PHP Fatal error:  Call to undefined function get_bloginfo() in /home/blueshiftcoding/public_html/wp-content/themes/blueshift/functions.php on line 2
+[01-Mar-2016 17:58:06 UTC] PHP Notice:  Use of undefined constant IMAGES - assumed 'IMAGES' in /home/blueshiftcoding/public_html/wp-content/themes/blueshift/footer.php on line 5
+[01-Mar-2016 17:58:06 UTC] PHP Notice:  Use of undefined constant IMAGES - assumed 'IMAGES' in /home/blueshiftcoding/public_html/wp-content/themes/blueshift/footer.php on line 6
+[01-Mar-2016 17:58:06 UTC] PHP Notice:  Use of undefined constant IMAGES - assumed 'IMAGES' in /home/blueshiftcoding/public_html/wp-content/themes/blueshift/footer.php on line 7
+[01-Mar-2016 17:58:06 UTC] PHP Fatal error:  Call to undefined function get_template_directory_uri() in /home/blueshiftcoding/public_html/wp-content/themes/blueshift/footer.php on line 45
+[13-Mar-2016 23:46:05 UTC] PHP Fatal error:  Call to undefined function get_bloginfo() in /home/blueshiftcoding/public_html/wp-content/themes/blueshift/functions.php on line 2
+[13-Mar-2016 23:46:06 UTC] PHP Notice:  Use of undefined constant IMAGES - assumed 'IMAGES' in /home/blueshiftcoding/public_html/wp-content/themes/blueshift/footer.php on line 5
+[13-Mar-2016 23:46:06 UTC] PHP Notice:  Use of undefined constant IMAGES - assumed 'IMAGES' in /home/blueshiftcoding/public_html/wp-content/themes/blueshift/footer.php on line 6
+[13-Mar-2016 23:46:06 UTC] PHP Notice:  Use of undefined constant IMAGES - assumed 'IMAGES' in /home/blueshiftcoding/public_html/wp-content/themes/blueshift/footer.php on line 7
+[13-Mar-2016 23:46:06 UTC] PHP Fatal error:  Call to undefined function get_template_directory_uri() in /home/blueshiftcoding/public_html/wp-content/themes/blueshift/footer.php on line 45
