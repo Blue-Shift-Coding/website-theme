@@ -22,6 +22,7 @@ if ( ! $post->post_excerpt ) return;
 <p><strong style="color: #000;">Price: </strong><?php the_field('price_for_display'); ?></p>
 <br>
 
+<a href="#" data-reveal-id="myModal" class="button">Book Now</a>
 
 
 
