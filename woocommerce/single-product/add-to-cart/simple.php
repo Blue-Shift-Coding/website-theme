@@ -389,7 +389,7 @@ html>body .entry ul,
 input[placeholder],
     [placeholder],
     *[placeholder] {
-      color: red !important;
+      color: #5086ac;
     }
 
 .gform_wrapper .top_label .gfield_label {
