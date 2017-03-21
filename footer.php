@@ -228,7 +228,7 @@ html[data-useragent*='Trident/7.0'] body {
   <div class="custom-modal-dialog hide">
     <div class="custom-modal-dialog_container">
       <div class="custom-modal-dialog_content">
-        Thank you for signing up
+        Thank you for signing up! We'll be in touch with info about our upcoming sessions and all things kids coding :-)
       </div>
     </div>
   </div>
