@@ -30,7 +30,7 @@
             <div class="book"><a href="/kidsgetcoding/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/book-3.jpg" /></a></div>
           </div>
         </div>
-        <div>
+        <div class="signup-form">
           <form id="mailchimp-form" type="post" action="<?php echo admin_url('admin-ajax.php'); ?>?action=mailchimp">
             <strong>Join our mailing list:</strong>
             <input type="text" placeholder="enter email" name="email"/>
@@ -191,6 +191,10 @@ html[data-useragent*='Trident/7.0'] body {
 
 
   <style type="text/css">
+
+    .signup-form {
+      padding-right: 3em;
+    }
 
     .custom-modal-dialog {
       width: 100%;
