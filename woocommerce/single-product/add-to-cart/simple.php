@@ -60,6 +60,11 @@ if ( ! $product->is_purchasable() ) return;
 <!-- Reveal Modals end -->
 	<style>
 
+.gform_wrapper textarea.medium {
+	 font-size: 1.5em;
+	 text-align: left;
+	}
+
 .gform_wrapper {
 	overflow: inherit;
 	margin: 10px 0;
@@ -90,8 +95,9 @@ if ( ! $product->is_purchasable() ) return;
 .gform_wrapper input[type=number],
 .gform_wrapper input[type=password] {
 	outline-style: none;
-	font-size: 11px;
+	font-size: 1.5em;
 	font-family: inherit;
+	text-align: left;
 	padding: 5px 2px 5px 2px;
 	letter-spacing: normal;
 }
