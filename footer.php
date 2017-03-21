@@ -57,7 +57,7 @@
 		<h2>London</h2>
 		<h2>W2 5EU</h2>
     <h2>Telephone:</h2>
-    <h2>02081339863</h2>
+    <h2>02031764660</h2>
     <a class="close-reveal-modal">&#215;</a>
   </div>
 
