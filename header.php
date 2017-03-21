@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/stylesheets/app.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/stylesheets/effect1.css" />
     <script src="<?php echo get_template_directory_uri(); ?>/bower_components/modernizr/modernizr.js"></script>
-    <link rel="icon" type="image/png" href="http://blueshiftcoding.com/tomblueshift/wp-content/themes/blueshift/images/logo-animation175p.png">
+    <link rel="icon" type="image/png" href="http://blueshiftcoding.com/favicon.ico">
 
     <!--[if IE]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
