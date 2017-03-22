@@ -16,9 +16,9 @@ $(function() {
     [60,99,163],
     [47,75,158]
     );
-   
+
   var step = 0;
-  //color table indices for: 
+  //color table indices for:
   // current color left
   // next color left
   // current color right
@@ -49,19 +49,19 @@ $(function() {
    $('#gradient').css({
      background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
       background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
-    
+
     step += gradientSpeed;
     if ( step >= 1 )
     {
       step %= 1;
       colorIndices[0] = colorIndices[1];
       colorIndices[2] = colorIndices[3];
-      
+
       //pick two new target color indices
       //do not pick the same as the current one
       colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
       colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
-      
+
     }
   }
 
@@ -70,13 +70,13 @@ $(function() {
 });
 
 $(function() {
-         
-   
+
+
     $('.fade-container').hover(function() {
       $( this ).find('.fade-2').animate({"opacity": 0.0}, 0);
       $( this ).find('.caption-2').addClass( "pattern" );
       $( this ).find('.caption-2').animate({"opacity": 1}, 0);
-      $( this ).find('.caption-2').animate({"z-index": 1}, 0);          
+      $( this ).find('.caption-2').animate({"z-index": 1}, 0);
     },
 
     function(){
@@ -85,7 +85,7 @@ $(function() {
       $( this ).find('.caption-2').removeClass( "pattern" );
     }
   );
-          
+
 });
 
 function checkWidth(init)
@@ -152,16 +152,21 @@ $('a[href^="#"]').on('click', function(event) {
 //     }, 0);
 // });
 
-$('#mce-EMAIL').click(function(e){    
-    // $('#mc-embedded-subscribe').fadeIn('fast', function(){
-    //     $('input[type="email"]').animate({width: "80%"}, 500)
-    // });
+// $('#mce-EMAIL').click(function(e){
+//     // $('#mc-embedded-subscribe').fadeIn('fast', function(){
+//     //     $('input[type="email"]').animate({width: "80%"}, 500)
+//     // });
+//
+// $('input[type="email"]').animate({width: "70%"}, 500, function(){
+//         $('#mc-embedded-subscribe').fadeIn('fast');
+//     });
+//
+// });
 
-$('input[type="email"]').animate({width: "70%"}, 500, function(){
-        $('#mc-embedded-subscribe').fadeIn('fast');
-    });
-
-});
+  $("#mce-EMAIL").mouseenter(function(e){
+    $('#mce-EMAIL').attr("placeholder", "");
+    $('#mce-EMAIL').focus();
+  });
 
 /* FOR jQuery WITH THE BUTTON I THINK IT IS EITHER THIS ------------ */
 
@@ -181,7 +186,7 @@ $('a.reveal-modal').trigger('onsubmit');
 /*---------------------------
  Defaults for Reveal
 ----------------------------*/
-   
+
 /*---------------------------
  Listener for data-reveal-id attributes
 ----------------------------*/
@@ -197,20 +202,20 @@ $('a.reveal-modal').trigger('onsubmit');
 ----------------------------*/
 
     $.fn.reveal = function(options) {
-        
-        
-        var defaults = {  
+
+
+        var defaults = {
         animation: 'fadeAndPop', //fade, fadeAndPop, none
         animationspeed: 300, //how fast animtions are
         closeonbackgroundclick: true, //if you click background will modal close?
         dismissmodalclass: 'close-reveal-modal' //the class of a button or element that will close an open modal
-      }; 
-      
+      };
+
         //Extend dem' options
-        var options = $.extend({}, defaults, options); 
-  
+        var options = $.extend({}, defaults, options);
+
         return this.each(function() {
-        
+
 /*---------------------------
  Global Variables
 ----------------------------*/
@@ -225,8 +230,8 @@ $('a.reveal-modal').trigger('onsubmit');
 ----------------------------*/
       if(modalBG.length == 0) {
         modalBG = $('<div class="reveal-modal-bg" />').insertAfter(modal);
-      }       
-     
+      }
+
 /*---------------------------
  Open & Close Animations
 ----------------------------*/
@@ -242,23 +247,23 @@ $('a.reveal-modal').trigger('onsubmit');
             modal.delay(options.animationspeed/2).animate({
               "top": $(document).scrollTop()+topMeasure + 'px',
               "opacity" : 1
-            }, options.animationspeed,unlockModal());         
+            }, options.animationspeed,unlockModal());
           }
           if(options.animation == "fade") {
             modal.css({'opacity' : 0, 'visibility' : 'visible', 'top': $(document).scrollTop()+topMeasure});
             modalBG.fadeIn(options.animationspeed/2);
             modal.delay(options.animationspeed/2).animate({
               "opacity" : 1
-            }, options.animationspeed,unlockModal());         
-          } 
+            }, options.animationspeed,unlockModal());
+          }
           if(options.animation == "none") {
             modal.css({'visibility' : 'visible', 'top':$(document).scrollTop()+topMeasure});
-            modalBG.css({"display":"block"}); 
-            unlockModal()       
+            modalBG.css({"display":"block"});
+            unlockModal()
           }
         }
         modal.unbind('reveal:open');
-      });   
+      });
 
       //Closing Animation
       modal.bind('reveal:close', function () {
@@ -272,8 +277,8 @@ $('a.reveal-modal').trigger('onsubmit');
             }, options.animationspeed/2, function() {
               modal.css({'top':topMeasure, 'opacity' : 1, 'visibility' : 'hidden'});
               unlockModal();
-            });         
-          }   
+            });
+          }
           if(options.animation == "fade") {
             modalBG.delay(options.animationspeed).fadeOut(options.animationspeed);
             modal.animate({
@@ -281,27 +286,27 @@ $('a.reveal-modal').trigger('onsubmit');
             }, options.animationspeed, function() {
               modal.css({'opacity' : 1, 'visibility' : 'hidden', 'top' : topMeasure});
               unlockModal();
-            });         
-          }   
+            });
+          }
           if(options.animation == "none") {
             modal.css({'visibility' : 'hidden', 'top' : topMeasure});
-            modalBG.css({'display' : 'none'});  
-          }   
+            modalBG.css({'display' : 'none'});
+          }
         }
         modal.unbind('reveal:close');
-      });     
-    
+      });
+
 /*---------------------------
  Open and add Closing Listeners
 ----------------------------*/
           //Open Modal Immediately
       modal.trigger('reveal:open')
-      
+
       //Close Modal Listeners
       var closeButton = $('.' + options.dismissmodalclass).bind('click.modalEvent', function () {
         modal.trigger('reveal:close')
       });
-      
+
       if(options.closeonbackgroundclick) {
         modalBG.css({"cursor":"pointer"})
         modalBG.bind('click.modalEvent', function () {
@@ -311,22 +316,22 @@ $('a.reveal-modal').trigger('onsubmit');
       $('body').keyup(function(e) {
             if(e.which===27){ modal.trigger('reveal:close'); } // 27 is the keycode for the Escape key
       });
-      
-      
+
+
 /*---------------------------
  Animations Locks
 ----------------------------*/
-      function unlockModal() { 
+      function unlockModal() {
         locked = false;
       }
       function lockModal() {
         locked = true;
-      } 
-      
+      }
+
         });//each call
     }//orbit plugin call
 })(jQuery);
-        
+
 
 
 
@@ -344,10 +349,9 @@ $(document).ready(function () {
         submitHandler: function (form) { // for demo
             $('#myModal').foundation('reveal', 'open');
             return false; // for demo
-            
+
         },
         messages:{ email: "please enter valid email"}
 
     });
 })
-

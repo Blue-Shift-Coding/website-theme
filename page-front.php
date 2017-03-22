@@ -30,8 +30,8 @@
               <!-- <h2>Subscribe to our mailing list</h2> -->
               <div class="mc-field-group">
                 <!-- <label for="mce-EMAIL">Email Address </label> -->
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Sign Up to Our Mailing List" style="float: left;">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="display:none;">
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your best email here to find out more!" style="float: left;">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="display:inline-block;">
               </div>
               <div id="mce-responses" class="clear">
                 <div class="response" id="mce-error-response" style="display:none"></div>
